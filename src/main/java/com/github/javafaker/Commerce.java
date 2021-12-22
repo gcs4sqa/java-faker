@@ -13,6 +13,10 @@ public class Commerce {
         this.faker = faker;
     }
 
+    public String clothing() {
+        return faker.fakeValuesService().resolve("clothing.name", this, faker);
+    }
+
     public String color() {
         return faker.fakeValuesService().resolve("color.name", this, faker);
     }

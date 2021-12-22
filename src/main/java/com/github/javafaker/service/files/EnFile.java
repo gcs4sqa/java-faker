@@ -50,6 +50,7 @@ public class EnFile {
             "code.yml",
             "coffee.yml",
             "coin.yml",
+            "clothing.yml",
             "color.yml",
             "commerce.yml",
             "community.yml",

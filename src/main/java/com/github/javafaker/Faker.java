@@ -32,6 +32,7 @@ public class Faker {
     private final Business business;
     private final Book book;
     private final ChuckNorris chuckNorris;
+    private final Clothing clothing;
     private final Color color;
     private final Commerce commerce;
     private final Country country;
@@ -147,6 +148,7 @@ public class Faker {
         this.book = new Book(this);
         this.business = new Business(this);
         this.chuckNorris = new ChuckNorris(this);
+        this.clothing = new Clothing(this);
         this.color = new Color(this);
         this.idNumber = new IdNumber(this);
         this.hacker = new Hacker(this);
@@ -412,6 +414,8 @@ public class Faker {
     public ChuckNorris chuckNorris() {
         return chuckNorris;
     }
+
+    public Clothing clothing() { return clothing;}
 
     public Color color() {
         return color;
