@@ -1,0 +1,4 @@
+en:
+  faker:
+    hair:
+      color: ['bl:blond','br:brown','gr:grey']
