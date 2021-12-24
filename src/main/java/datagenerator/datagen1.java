@@ -14,10 +14,10 @@ public class datagen1 {
 
        for (int i =0; i < 1000; i++) {
 
-
+            String hair = faker.hair().color();
            System.out.println("name = " + faker.clothing().name());
-           System.out.println("hair color = " + valueSplitter(faker.hair().color(),1));
-           System.out.println("hair code = " + valueSplitter(faker.hair().color(),0));
+           System.out.println("hair color = " + valueSplitter(hair,1));
+           System.out.println("hair code = " + valueSplitter(hair,0));
 
 
 

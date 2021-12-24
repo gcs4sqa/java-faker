@@ -3,7 +3,7 @@
     <groupId>com.goldbuild.javafaker</groupId>
     <artifactId>javafaker</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.4</version>
     <name>Java Faker</name>
 
     <properties>
@@ -12,6 +12,7 @@
         <additionalparam>-Xdoclint:none</additionalparam>
     </properties>
     <dependencies>
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -129,8 +130,22 @@
                         </execution>
                     </executions>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-shade-plugin</artifactId>
+                    <version>3.2.0</version>
+                    <executions>
+                        <!-- Attach the shade goal into the package phase -->
+                        <execution>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>shade</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
 			</plugins>
-		</pluginManagement>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -141,5 +156,6 @@
                 </configuration>
             </plugin>
         </plugins>
+
     </build>
 </project>
