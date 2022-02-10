@@ -1,4 +1,7 @@
 en:
   faker:
     clothing:
-      name: [Jumper, Jeans, Boots]
+      colour: [red, yellow, green, blue]
+      item: [Jumper, Jeans, Boots]
+      name:
+        - "#{colour} #{item}"
